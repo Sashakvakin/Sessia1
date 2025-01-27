@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">sas1601</string>
+    <string name="app_name">Sas1601</string>
+
+    <!-- Onboarding Strings -->
+    <string name="title_onboarding1">Quick Delivery At Your Doorstep</string>
+    <string name="description_onboarding1">Enjoy quick pick-up and delivery to your destination</string>
+
+    <string name="title_onboarding2">Flexible Payment</string>
+    <string name="description_onboarding2">Different modes of payment either before and after delivery without stress</string>
+
+    <string name="title_onboarding3">Real-time Tracking</string>
+    <string name="description_onboarding3">Track your packages/items from the comfort of your home till final destination</string>
+
+    <string name="already_have_account">Already have an account? Sign in</string>
 </resources>
