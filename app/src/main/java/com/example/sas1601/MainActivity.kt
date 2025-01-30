@@ -1,5 +1,6 @@
 package com.example.sas1601
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.TextPaint
@@ -67,6 +68,11 @@ class MainActivity : AppCompatActivity() {
             }
             showNextOnboardingItem()
         }
+
+        signUpButton.setOnClickListener {
+            val intent = Intent(this, Session2Activity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun setupOnboardingQueue() {
@@ -106,7 +112,7 @@ class MainActivity : AppCompatActivity() {
                 skipButton.visibility = View.GONE
                 signUpButton.visibility = View.VISIBLE
                 signInTextView.visibility = View.VISIBLE
-                setClickableSignInText() // Делаем текст "Sign in" кликабельным
+                setClickableSignInText()
 
             } else {
                 nextButton.visibility = View.VISIBLE
@@ -115,8 +121,6 @@ class MainActivity : AppCompatActivity() {
                 signInTextView.visibility = View.GONE
             }
 
-        } else {
-            finish()
         }
     }
 
