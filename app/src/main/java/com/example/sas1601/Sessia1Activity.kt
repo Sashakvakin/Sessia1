@@ -18,7 +18,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class Sessia1Activity : AppCompatActivity() {
 
     data class OnboardingItem(
         val imageResId: Int,
@@ -78,21 +78,21 @@ class MainActivity : AppCompatActivity() {
     private fun setupOnboardingQueue() {
         onboardingQueue.add(
             OnboardingItem(
-                R.drawable.in_no_time_pana_1,
+                R.drawable.sessia1_image1,
                 R.string.title_onboarding1,
                 R.string.description_onboarding1
             )
         )
         onboardingQueue.add(
             OnboardingItem(
-                R.drawable.rafiki,
+                R.drawable.sessia1_image2,
                 R.string.title_onboarding2,
                 R.string.description_onboarding2
             )
         )
         onboardingQueue.add(
             OnboardingItem(
-                R.drawable.rafiki2,
+                R.drawable.sessia1_image3,
                 R.string.title_onboarding3,
                 R.string.description_onboarding3,
                 true
@@ -134,12 +134,12 @@ class MainActivity : AppCompatActivity() {
             val clickableSpan = object : ClickableSpan() {
                 override fun onClick(widget: View) {
                     // Действие при клике на "Sign in"
-                    Toast.makeText(this@MainActivity, "Sign in clicked", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@Sessia1Activity, "Sign in clicked", Toast.LENGTH_SHORT).show()
                 }
 
                 override fun updateDrawState(ds: TextPaint) {
                     super.updateDrawState(ds)
-                    ds.color = ContextCompat.getColor(this@MainActivity, R.color.blue_sign_in) // Установите цвет кликабельного текста
+                    ds.color = ContextCompat.getColor(this@Sessia1Activity, R.color.blue_sign_in) // Установите цвет кликабельного текста
                     ds.isUnderlineText = true
                 }
             }

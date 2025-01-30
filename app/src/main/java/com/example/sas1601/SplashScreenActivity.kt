@@ -20,8 +20,8 @@ class SplashScreenActivity : AppCompatActivity() {
         val imageView: ImageView = findViewById(R.id.imageView)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, Sessia1Activity::class.java))
             finish()
-        }, 1500)
+        }, 800)
     }
 }
